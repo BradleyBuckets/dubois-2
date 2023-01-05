@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --primary-dark: #18181b;
+  --primary-white: #fafafa;
+}
+body {
+  background-color: var(--primary-dark);
+}
+
+.nav2,
+.foot {
+  height: auto;
+  width: 100vw;
+  color: var(--primary-white);
+  background-color: var(--primary-dark);
+}
+
+.navContainer2,
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navContainer2 {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.navItems2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about2,
+.menu2,
+.bookNow2 {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.logo2,
+.footLogo {
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 10px;
+  letter-spacing: 4px;
+}
+
+/* footer styles */
+.footContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.facebook,
+.instagram,
+.other {
+  height: 30px;
+  width: 30px;
+  border: 2px solid var(--primary-white);
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.options {
+  width: 162px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.list {
+  padding-right: 10px;
+}
+
+.privacy,
+.legal,
+.careers {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+.body {
+  height: 200vh;
+  background-color: var(--primary-white);
+}
+
+/* animations */
+.list:hover,
+.logo2,
+.footLogo,
+.bookNow2,
+.menu2,
+.about2 {
+  cursor: pointer;
+}
+
+.privacy:hover,
+.legal:hover,
+.careers:hover {
+  color: #a1a1aa;
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.facebook:hover,
+.instagram:hover,
+.other:hover {
+  height: 34px;
+  width: 34px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.bookNow2,
+.menu2,
+.about2 {
+  position: relative;
+}
+.bookNow2::before,
+.menu2::before,
+.about2::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.bookNow2::after,
+.menu2::after,
+.about2::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.bookNow2:hover::before,
+.menu2:hover::before,
+.about2:hover::before {
+  width: 180px;
+  height: 43px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: 2px solid var(--primary-white);
+  border-top: none;
+  border-right: none;
+  transition: height 0.2s linear, width 0.4s linear 0.2s;
+}
+.bookNow2:hover::after,
+.menu2:hover::after,
+.about2:hover::after {
+  width: 180px;
+  height: 43px;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  border: 2px solid var(--primary-white);
+  border-bottom: none;
+  border-left: none;
+  transition: height 0.2s linear, width 0.4s linear 0.2s;
+}
+
+.triangle2 {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 15px solid var(--primary-white);
+}
+.triDown {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 15px solid var(--primary-white);
+  align-self: center;
+}
+
+.foot,
+.nav2 {
+  display: flex;
+  flex-direction: column;
+}
+.triContainer2About {
+  align-self: flex-end;
+  padding-right: 410px;
+}
+.triContainer2Menu {
+  align-self: flex-end;
+  padding-right: 230px;
+}
+.triContainer2Book {
+  align-self: flex-end;
+  padding-right: 50px;
+}
